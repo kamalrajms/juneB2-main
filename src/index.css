@@ -1,0 +1,16 @@
+.greeting{
+    background-color: blue;
+    color: aliceblue;
+    padding: 30px;
+}
+.destructure{
+    background: #000;
+    color: aliceblue;
+    padding: 30px;
+}
+.external{
+    margin: 150px;
+}
+.module{
+    margin: 200px;
+}

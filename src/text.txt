@@ -1,0 +1,93 @@
+22/06/2026
+
+## react intro
+
+    What is React?
+
+    1) React is a JavaScript library (not a framework) developed by Facebook (Meta) for building user interfaces (UIs), especially Single Page Applications (SPAs).
+
+    2) It helps developers build reusable UI components that update efficiently when data changes.
+
+    Instead of reloading a whole webpage when something changes, React updates only the parts of the UI that need to change.
+
+    -------
+    Why do we need React?
+
+	It makes UI development faster, cleaner, and more efficient.
+
+	Provides a better user experience with smooth updates without page reloads.
+
+
+    ## must need to install node.js
+ 
+## procedure to initiate project
+
+    step 1 : npm create vite@latest [project_name]
+    step 2 : select react
+    step 3 : select javascript+ react compailer
+    step 4 : npm install                // install node module packages
+    step 5 : npm run dev 
+
+    if you want to re-run your project mean 
+        npm run dev
+
+23/06/2026
+
+## Props
+
+    Props is nothing but drilling data from parent component to child 
+    component.
+
+            declearing Props
+            destructuring Props
+
+## styleing in react
+
+    global styleing--- index.css and app.css is called as global styleing file
+    external styleing--- to create an seperate style css file for a component.
+    module styleing --- to implement module style ,we need to declear a file name in
+                        different way eg:[filename.module.css]
+    inline styleing--- we need to call style attribute with {{padding:"20px"}}
+    object styleing--- we need to declear an entair styleing property in as an object
+                        and we  need to call the object name in style attribute. 
+                                    style={object name} 
+
+24/06/2026
+
+## Conditional rendering
+
+    Conditional renedering means showing or hiding parts of UI based on some condition.
+
+            ternary operator  {Condition?true:false}
+            Logical operator  &&  ||  !
+
+## list rendering  
+
+    Rendering multiple items dynamically using map().
+
+
+    [1,2,3].map((name)=>(
+        name*2
+    ))
+
+    [2,4,6]
+
+
+29/06/2026
+
+## useState Hook
+
+    useState is a react hook that allows you to add state (data that can change over time)
+    to a functional component.
+
+    Normally ,in js function , variables disappear after the function runs.
+    but with useState,react remembers values b/w  re-render.
+
+    syntax:
+
+        const[state,setstate]=useState(initialValue)
+
+        state---        the current value of the state variable
+        setstate---     A function that update thee state
+        initialValue--- the starting value of the state variable
+
