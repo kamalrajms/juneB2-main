@@ -8,6 +8,9 @@ import ConditionallRender from "./Component/ConditionallRender";
 import ListRender from "./Component/ListRender";
 import UseStateHook from "./Component/UseStateHook";
 import Field from "./Component/Field";
+import RegForm from "./Component/RegForm";
+import ConditionalForm from "./Component/ConditionalForm";
+import UseEffectHook from "./Component/UseEffectHook";
 
 export default function () {
   // js function
@@ -27,6 +30,9 @@ export default function () {
 
   return (
     <>
+      <UseEffectHook />
+      <ConditionalForm />
+      <RegForm />
       <Field />
       <UseStateHook />
       {bool ? <ListRender /> : <ConditionallRender />}
