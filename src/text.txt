@@ -111,3 +111,21 @@
 
         []---if we mension the dependency as empty means it will evecute 
                 the useEffect  only once at the begining.
+                
+
+## domain & sub domain
+
+    example.com
+
+    mail.example.com
+    support.example.com
+
+
+
+    .com----commercial
+    .edu----education
+    .co-----company
+    .gov---govermnment
+    .in--- india
+    .mil--- military
+    

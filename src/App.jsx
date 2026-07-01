@@ -11,6 +11,9 @@ import Field from "./Component/Field";
 import RegForm from "./Component/RegForm";
 import ConditionalForm from "./Component/ConditionalForm";
 import UseEffectHook from "./Component/UseEffectHook";
+import Timer from "./Component/Timer";
+import StopWatchTimer from "./Component/StopWatchTimer";
+import UseEffectAPI from "./Component/UseEffectAPI";
 
 export default function () {
   // js function
@@ -30,6 +33,9 @@ export default function () {
 
   return (
     <>
+    <UseEffectAPI/>
+      <StopWatchTimer />
+      <Timer />
       <UseEffectHook />
       <ConditionalForm />
       <RegForm />
