@@ -91,6 +91,7 @@
         setstate---     A function that update thee state
         initialValue--- the starting value of the state variable
 
+1/07/2026
 
 ## useEffect()
 
@@ -128,4 +129,34 @@
     .gov---govermnment
     .in--- india
     .mil--- military
+
+
+02/07/2026
     
+## useRef()
+
+    useRef is a react hook that gives you abox (.current) you can store anything in
+    like: num,str,obj,fun,even  dom elements.
+
+    That value persists b/w renders.
+
+    Updating it  does not case your component to re-render.
+
+
+    {current:value}
+
+    syntax:
+
+        const refContainer=useref(initialValue)
+
+
+## useReducer()
+
+    syntax:
+
+        const[state,dispatch]=useReducer(reducerFunction,initialValue)
+
+        state ---  current state (like useState value)
+        dispatch (action)--- a  function to tell reducer what to  do
+        reducerFunction(state,action)--- the logic that returns a new state
+        initiateState --- starting values.

@@ -1,16 +1,30 @@
-.greeting{
-    background-color: blue;
-    color: aliceblue;
-    padding: 30px;
+.greeting {
+  background-color: blue;
+  color: aliceblue;
+  padding: 30px;
 }
-.destructure{
-    background: #000;
-    color: aliceblue;
-    padding: 30px;
+.destructure {
+  background: #000;
+  color: aliceblue;
+  padding: 30px;
 }
-.external{
-    margin: 150px;
+.external {
+  margin: 150px;
 }
-.module{
-    margin: 200px;
+.module {
+  margin: 200px;
+}
+.org-image {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  /* background-color: aqua; */
+  border: 2px solid #333;
+  cursor: pointer;
 }

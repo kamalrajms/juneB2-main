@@ -14,6 +14,8 @@ import UseEffectHook from "./Component/UseEffectHook";
 import Timer from "./Component/Timer";
 import StopWatchTimer from "./Component/StopWatchTimer";
 import UseEffectAPI from "./Component/UseEffectAPI";
+import UseRefHook from "./Component/UseRefHook";
+import ReducerCount from "./Component/ReducerCount";
 
 export default function () {
   // js function
@@ -33,7 +35,9 @@ export default function () {
 
   return (
     <>
-    <UseEffectAPI/>
+      <ReducerCount />
+      <UseRefHook />
+      <UseEffectAPI />
       <StopWatchTimer />
       <Timer />
       <UseEffectHook />
