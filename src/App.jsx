@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, createContext, useState } from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import ExternalStyle from "./ExternalStyle";
@@ -16,6 +16,11 @@ import StopWatchTimer from "./Component/StopWatchTimer";
 import UseEffectAPI from "./Component/UseEffectAPI";
 import UseRefHook from "./Component/UseRefHook";
 import ReducerCount from "./Component/ReducerCount";
+import ReducerForm from "./Component/ReducerForm";
+import First from "./Context/First";
+import ContextFom from "./Context/ContextFom";
+
+export const Pass = createContext();
 
 export default function () {
   // js function
@@ -33,8 +38,24 @@ export default function () {
 
   const bool = false;
 
+  const [theme, setTheme] = useState("light");
+  const data = { name: "react.js" };
+  console.log(theme);
+
   return (
     <>
+      <div style={{ border: "2px solid #333", padding: "20px" }}>
+        <Pass.Provider value={{ theme, setTheme, data }}>
+          <ContextFom />
+        </Pass.Provider>
+      </div>
+      <div style={{ border: "2px solid #333", padding: "20px" }}>
+        <h2>App component---{name}</h2>
+        <Pass.Provider value={name}>
+          <First />
+        </Pass.Provider>
+      </div>
+      <ReducerForm />
       <ReducerCount />
       <UseRefHook />
       <UseEffectAPI />

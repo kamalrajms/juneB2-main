@@ -160,3 +160,17 @@
         dispatch (action)--- a  function to tell reducer what to  do
         reducerFunction(state,action)--- the logic that returns a new state
         initiateState --- starting values.
+
+06/07/2026
+
+## useContext()
+
+    Passing data from a parent component down to deeply nested child component is annoying.
+    Normally, you'd have to pass props manually through each level (called props drilling).
+    useContext lets you skip all the middle component and share data directly.
+
+            Create a context.
+            Provide a value.
+            Consume the value.
+
+    in a component we can able to create a  context only once.

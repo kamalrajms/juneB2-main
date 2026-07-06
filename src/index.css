@@ -28,3 +28,14 @@
   border: 2px solid #333;
   cursor: pointer;
 }
+
+.light {
+  background-color: aliceblue;
+  color: #000;
+  padding: 30px;
+}
+.black {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  padding: 30px;
+}
