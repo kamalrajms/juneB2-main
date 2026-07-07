@@ -6,7 +6,7 @@ export default function ContextField() {
   const { data } = useContext(Pass);
   return (
     <div>
-      <input type="text" value={data.name} />
+      <input type="text"  />
       <ContextBtn />
     </div>
   );

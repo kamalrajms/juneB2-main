@@ -173,4 +173,69 @@
             Provide a value.
             Consume the value.
 
-    in a component we can able to create a  context only once.
+    in a component we can able to create a  context only once. 
+
+
+07/07/2026
+
+## Routing in react && nested routing
+
+Routing means navigating between different pages in a web app without 
+refreshing the browser.
+
+In traditional website ,clicking a link reloads the whole page.
+
+In react single  page Application , routing lets us changes the view without reloading.
+
+
+        better prformance (no full reload)
+        Smooth user experiance
+        Control over navigation without server request
+
+commend: npm install react-router-dom
+
+
+structure of routing:
+
+    <BrowserRouter>
+    <Routes>
+        <Route path="/address_path" elements={<Component/>}/>
+        <Route path="/hamo" elements={<Home/>}/>
+        <Route path="/about" elements={<About/>}/>
+    </Routes>
+    </BrowserRouter>
+
+
+BrowserRouter:
+
+    It is the main wrapper component for routing in reacct app.
+    it enables navigation using the browser's URL .
+    without this , routing will not work.
+
+Routes:
+
+    It contains all the <Route/> component.
+    It tell react router with component to show for the which path
+    Only one rout will match and render at a time.
+
+Route:
+
+    Definee a specific URL path and which component should load for the path.
+
+
+## useId()
+
+    useId() is a react hook intro in react 18
+
+    It is uesd to generate unique id's that are consistent b/t srever and client
+    (important for ssr-servver-side render).
+
+    syntax: const id=useId()
+
+## useNavigate()
+
+    useNavigate is a hook provides by react Router that returns a function
+    allowing you to programmatically navigates to different routes (changes the  url)
+    in response to events like frameworksubmissonn, button...etc.
+
+    syntax: const navigate=useNavigate()
