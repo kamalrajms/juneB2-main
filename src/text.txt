@@ -239,3 +239,26 @@ Route:
     in response to events like frameworksubmissonn, button...etc.
 
     syntax: const navigate=useNavigate()
+
+08/072026
+
+## useParams()
+
+    useParams is a hook provided by react router that returns an object containing keys/value 
+    paris of the dynamic parameter from the current url.
+    
+    there parameter are defined in your route path using a colon (:) followed by a parameter name.
+
+
+    syntax:
+
+        const params=useParams();
+
+## API integration
+
+    fetch,axios
+
+
+    states-code=200
+    response.ok=t/false
+    err={message:"ggrwfw"}
