@@ -259,6 +259,35 @@ Route:
     fetch,axios
 
 
+
     states-code=200
     response.ok=t/false
     err={message:"ggrwfw"}
+
+    commend  :npm i axios or npm install axios
+
+
+    structure of axios:
+
+    response={
+        status-code:200,
+        status:ok,
+        data:[{id:1},{id:1},{id:1},{id:1}],
+        herader:{......},
+        error:"404"
+    }
+
+09/07/2026
+
+## custom Hook
+
+    A custom hook is a reusable function in react that contains logic using
+    hook (like : useState,useEffect....).
+
+    It allows you to share and reuse stateful logic b/w multiple component 
+    without repeating code.
+
+    need to creata custom hook in js file.
+
+    The name of a custom hook must start with [use] ,such as useFetch,useLocation..
+
