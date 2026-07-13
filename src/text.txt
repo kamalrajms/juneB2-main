@@ -291,3 +291,21 @@ Route:
 
     The name of a custom hook must start with [use] ,such as useFetch,useLocation..
 
+
+
+13/07/2026
+
+## useSearchParam ()
+
+    useSearchParam is a hook provided by React Router used to read, access, and update query parameter
+    (search parameter) in the url.
+
+    useSearchParam helps manage url query  parameter dynamically in react Application.
+
+
+    syntax:
+
+        const [SearchParams,setSeachParams]=useSearchParams()
+
+        SearchParam--- read data
+        setSeachParams--- update data
