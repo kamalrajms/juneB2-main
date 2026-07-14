@@ -309,3 +309,22 @@ Route:
 
         SearchParam--- read data
         setSeachParams--- update data
+
+
+14/07/2026
+
+## CRUD operation
+                    Request method
+    Create Data ---- POST
+    Read data------- GET 
+    UpDate data----- PUT 
+    Delete data ---- DELETE
+
+
+                        http req
+    Client[React app] -------------------->  server
+                      <---------------------
+                        http response {json}
+
+## netlify
+
